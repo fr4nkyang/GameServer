@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+
+<script>
+    var chat = io.connect('http://localhost:8091/chat')
+        , news = io.connect('http://localhost:8091/news');
+
+    chat.on('connect', function () {
+        chat.emit('hi!');
+
+    });
+
+    chat.on('chat', function(socket){
+        chat.emit('chat', 'fucking kidding me?');
+    });
+
+    news.on('news', function () {
+        news.emit('woot');
+    });
+</script>
+
+</body>
+</html>
