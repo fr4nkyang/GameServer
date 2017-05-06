@@ -1,8 +1,7 @@
-var matchInfo = require('./Game');
-var users = require('./users');
-var LogFactory = require('./logger');
+var matchInfo = require('./../store/Game');
+var LogFactory = require('./../logger');
 var _ = require('lodash');
-var Excep = require('./BaseException');
+var Excep = require('./../BaseException');
 
 // ------------------------------------------------------------------------------------------------------------
 
@@ -18,14 +17,15 @@ function userCheck(data) {
         if (_.isNil(data.phone) || "" === _.trim(data.phone)) {
             throw new Excep.BaseException('UserException', '手机号无效！');
         }
-        if (_.isNil(data.userName) || "" === _.trim(data.userName)) {
-            throw new Excep.BaseException('UserException', '用户名无效！');
-        }
-        if (_.isString(data.userName) && data.userName.length < 6 ){
-            throw new Excep.BaseException('UserException', '用户名太短！');
-        }
-        if (_.isString(data.userName) && data.phone.length != 11 ){
+        if (_.isString(data.phone) && data.phone.length != 11) {
             throw new Excep.BaseException('UserException', '手机号无效！');
+        }
+        if (_.isNil(data.userName) || "" === _.trim(data.userName)) {
+            // 用户名没有输入，则默认是手机号
+            data.userName = data.phone;
+        }
+        if (_.isString(data.userName) && data.userName.length < 6) {
+            throw new Excep.BaseException('UserException', '用户名太短！');
         }
 
         return true;
@@ -51,7 +51,7 @@ function reqUserParamCheck(data) {
  * 初始化游戏管理的消息处理器
  * @param socket
  */
-exports.initUserHandler = function (socket) {
+exports.initUserHandler = function (socket, game) {
 
     socket.on('register', function (data) {
         log.debug('Get REGISTER request');
@@ -59,7 +59,7 @@ exports.initUserHandler = function (socket) {
 
         try {
             if (userCheck(data)) {
-                var curUsers = users.getUsers();
+                var curUsers = game.getUsers();
                 var isIn = _.find(curUsers, function (o) {
                     if (o.userName == data.userName || o.phone == data.phone) {
                         return true;
@@ -67,7 +67,7 @@ exports.initUserHandler = function (socket) {
                 });
                 if (_.isNil(isIn)) {
                     // 没有被注册，加入数据库／缓存
-                    users.addUser(data);
+                    game.addUser(data);
                     socket.emit('registerSuccess', data);
                 } else {
                     throw new Excep.BaseException('RegisterException', '该用户信息已经注册过！');
@@ -88,7 +88,7 @@ exports.initUserHandler = function (socket) {
 
         try {
             if (userCheck(data)) {
-                var curUsers = users.getUsers();
+                var curUsers = game.getUsers();
                 var isIn = _.find(curUsers, function (o) {
                     if (o.userName == data.userName && o.phone == data.phone) {
                         return true;
@@ -115,7 +115,7 @@ exports.initUserHandler = function (socket) {
 
         try {
             if (reqUserParamCheck(data)) {
-                var curUsers = users.getUsers();
+                var curUsers = game.getUsers();
                 var isIn = _.find(curUsers, function (o) {
                     if (o.userName == data.userName) {
                         return true;
@@ -140,7 +140,7 @@ exports.initUserHandler = function (socket) {
         log.debug('Get GET_ALL_USER request');
         log.debug(JSON.stringify(data));
 
-        var curUsers = users.getUsers();
+        var curUsers = game.getUsers();
         if (_.isNil(curUsers)) {
             socket.emit('getAllUserSuccess', null);
         } else {

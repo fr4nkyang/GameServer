@@ -7,10 +7,10 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var LogFactory = require('./logger');
-var matchInfo = require('./Game.js');
+var GameStore = require('./store/Game.js');
 var users = require('./users.js');
-var GameHandler = require('./GameHandler.js');
-var UserHandler = require('./UserHandler');
+var GameHandler = require('./handler/GameHandler.js');
+var UserHandler = require('./handler/UserHandler');
 var Excep = require('./BaseException');
 
 // ------------------------------------------------------------------------------------------------------------
@@ -23,12 +23,14 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // ------------------------------------------------------------------------------------------------------------
 
+var game = new GameStore.Game();
+
 io.on('connection', function(socket) {
     log.info('new connection made');
 
     // 绑定比赛消息相关的处理handler
-    GameHandler.initGameHandler(socket);
-    UserHandler.initUserHandler(socket);
+    GameHandler.initGameHandler(socket, game);
+    UserHandler.initUserHandler(socket, game);
 
     // When new socket joins
     socket.on('join', function(data) {
