@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="640" height="1138" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="640" height="1138" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="bg_jpg"/>
+	<e:Label text="手机号📱：" x="10" y="499" italic="true" textColor="0x090a0a" anchorOffsetX="0" width="292" anchorOffsetY="0" height="72" size="60"/>
+	<e:Label text="用户名" x="29" y="385" italic="true" textColor="0x000000" anchorOffsetX="0" width="206" anchorOffsetY="0" height="72" size="60"/>
+	<e:TextInput id="txtUserName" width="354.55" height="75" x="240" y="378" anchorOffsetX="0" anchorOffsetY="0" enabled="true"/>
+	<e:TextInput id="txtPhone" width="354.55" height="75" x="257" y="485" anchorOffsetX="0" anchorOffsetY="0" enabled="true"/>
+	<e:Button id="btnLogin" label="登陆" x="107" y="637" anchorOffsetX="0" width="407" anchorOffsetY="0" height="76"/>
+	<e:Button id="btnReg" label="注册" x="113" y="735" anchorOffsetX="0" width="395" anchorOffsetY="0" height="90"/>
+	<e:Label id="textMsg" text="" x="46" y="876" anchorOffsetX="0" width="526" anchorOffsetY="0" height="174" textColor="0xf90707" size="45"/>
+</e:Skin>

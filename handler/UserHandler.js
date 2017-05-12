@@ -97,7 +97,7 @@ exports.initUserHandler = function (socket, game) {
                 if (_.isNil(isIn)) {
                     throw new Excep.BaseException('LoginException', '登陆失败，用户名或密码错误！');
                 } else {
-                    socket.emit('loginSuccess', curUsers);
+                    socket.emit('loginSuccess', isIn);
                 }
 
             }

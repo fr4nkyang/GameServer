@@ -1,14 +1,20 @@
 var uuid = require("uuid/v4");
 var _ = require("lodash");
 var Excep = require('./../BaseException');
+var DateFormat = require("../lib/dateFormat");
 
-function Match(id, time, name) {
+
+
+function Match(id, matchName, stime, endtime) {
     if (_.isNil(id))
         this.matchId = uuid();
     else
         this.matchId = id;
-    this.startTime = time;
-    this.name = name;
+    this.startTime = stime;
+    this.startTimeString = DateFormat.formatTimestamp(this.startTime);
+    this.endTime = endtime;
+    this.matchName = matchName;
+    this.isRunning = false;
     this.userList = [];
 }
 
@@ -18,7 +24,7 @@ Match.prototype.joinGame = function (user) {
         throw new Excep.BaseException("MatchException", "加入比赛失败：用户信息不全");
     else {
         var ind = _.findIndex(this.userList, function (o) {
-            return o.userName == user
+            return o.userName == user;
         });
         if (-1 == ind) {
             this.userList.push(user);

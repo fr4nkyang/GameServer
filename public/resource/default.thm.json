@@ -1,0 +1,96 @@
+{
+  "skins": {
+    "eui.Button": "resource/eui_skins/ButtonSkin.exml",
+    "eui.CheckBox": "resource/eui_skins/CheckBoxSkin.exml",
+    "eui.HScrollBar": "resource/eui_skins/HScrollBarSkin.exml",
+    "eui.HSlider": "resource/eui_skins/HSliderSkin.exml",
+    "eui.Panel": "resource/eui_skins/PanelSkin.exml",
+    "eui.TextInput": "resource/eui_skins/TextInputSkin.exml",
+    "eui.ProgressBar": "resource/eui_skins/ProgressBarSkin.exml",
+    "eui.RadioButton": "resource/eui_skins/RadioButtonSkin.exml",
+    "eui.Scroller": "resource/eui_skins/ScrollerSkin.exml",
+    "eui.ToggleSwitch": "resource/eui_skins/ToggleSwitchSkin.exml",
+    "eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
+    "eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
+    "eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml"
+  },
+  "autoGenerateExmlsList": true,
+  "exmls": [
+    {
+      "path": "resource/components/adminPanel.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin width=\"640\" height=\"1138\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<w:Config id=\"15bbec0a4de\"/>\n\t<e:Image width=\"640\" height=\"1138\" x=\"0\" y=\"0.01\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" source=\"bg2_jpg\"/>\n\t<e:Group width=\"640\" height=\"1138\" x=\"0\" y=\"0\" anchorOffsetX=\"0\" anchorOffsetY=\"0\">\n\t\t<e:Button id=\"btnReturn\" label=\"返回主页\" x=\"12.21\" y=\"4.97\" anchorOffsetX=\"0\" width=\"142.42\" anchorOffsetY=\"0\" height=\"46.97\" enabled=\"true\"/>\n\t\t<e:Group width=\"640\" height=\"1000\" x=\"0\" y=\"81\" anchorOffsetX=\"0\" anchorOffsetY=\"0\">\n\t\t\t<e:TextInput id=\"txtStartTime\" width=\"110\" height=\"50\" x=\"156\" y=\"63\" anchorOffsetX=\"0\" anchorOffsetY=\"0\"/>\n\t\t\t<e:TextInput id=\"txtName\" width=\"216\" height=\"50\" x=\"160\" y=\"143\" anchorOffsetX=\"0\" anchorOffsetY=\"0\"/>\n\t\t\t<e:TextInput id=\"txtPeriod\" width=\"210\" height=\"50\" x=\"160\" y=\"219\" anchorOffsetX=\"0\" anchorOffsetY=\"0\"/>\n\t\t\t<e:Label text=\"开始时间\" x=\"22\" y=\"75\" textColor=\"0xf70221\" anchorOffsetX=\"0\" width=\"124\"/>\n\t\t\t<e:Label text=\"名字\" x=\"66\" y=\"155\" textColor=\"0xF70221\" anchorOffsetX=\"0\" width=\"86\"/>\n\t\t\t<e:Label text=\"比赛时长\" x=\"20\" y=\"235\" textColor=\"0xF70221\" anchorOffsetX=\"0\" width=\"126\" anchorOffsetY=\"0\" height=\"28\"/>\n\t\t\t<e:Button id=\"btnCreateGame\" label=\"创建比赛\" x=\"470\" y=\"65\" anchorOffsetY=\"0\" height=\"200\"/>\n\t\t\t<e:Button id=\"btnStopGame\" label=\"中止比赛\" x=\"72\" y=\"335\" anchorOffsetX=\"0\" width=\"420\" anchorOffsetY=\"0\" height=\"84\"/>\n\t\t\t<e:Button id=\"btnCleanGame\" label=\"清空比赛\" x=\"74\" y=\"445\" anchorOffsetX=\"0\" width=\"420\" anchorOffsetY=\"0\" height=\"84\"/>\n\t\t\t<e:TextInput id=\"txtMoreTime\" width=\"62\" height=\"48\" x=\"306\" y=\"63\" anchorOffsetX=\"0\" anchorOffsetY=\"0\"/>\n\t\t\t<e:Label text=\"+\" x=\"276\" y=\"75\" textColor=\"0x0a0909\" anchorOffsetX=\"0\" width=\"54\" anchorOffsetY=\"0\" height=\"52\"/>\n\t\t</e:Group>\n\t</e:Group>\n</e:Skin>"
+    },
+    {
+      "path": "resource/components/matchInfoListIRSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin width=\"640\" height=\"80\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<e:Image width=\"100%\" height=\"100%\" x=\"0\" y=\"0\" source=\"matchInfo2_png\"/>\n\t<e:Label id=\"txtMatchName\" text=\"{data.matchName}\" x=\"5.33\" y=\"20.67\" anchorOffsetX=\"0\" width=\"211.33\" anchorOffsetY=\"0\" height=\"40.67\" textColor=\"0x0432f9\" size=\"25\"/>\n\t<e:Label id=\"txtStartTime\" text=\"{data.startTime}\" x=\"221.66\" y=\"19.34\" anchorOffsetX=\"0\" width=\"181.33\" anchorOffsetY=\"0\" height=\"52.67\" textColor=\"0x0432F9\" size=\"25\"/>\n\t<e:Button id=\"btnJoinGame\" label=\"加入游戏\" x=\"421\" y=\"20\" anchorOffsetX=\"0\" width=\"110\" anchorOffsetY=\"0\" height=\"35\"/>\n\t<e:Button id=\"btnQueryResult\" label=\"查看成绩\" x=\"537.96\" y=\"19.26\" anchorOffsetX=\"0.96\" anchorOffsetY=\"-0.74\" width=\"96\" height=\"37\"/>\n</e:Skin>"
+    },
+    {
+      "path": "resource/eui_skins/VScrollBarSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"skins.VScrollBarSkin\" minWidth=\"8\" minHeight=\"20\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:Image id=\"thumb\" source=\"roundthumb_png\" scale9Grid=\"3,3,2,2\" height=\"30\" width=\"8\" horizontalCenter=\"0\"/>\n</e:Skin>\n"
+    },
+    {
+      "path": "resource/components/matchInfoSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin width=\"640\" height=\"1138\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<w:Config id=\"15bbec0a4de\"/>\n\t<e:Image width=\"640\" height=\"1138\" x=\"0\" y=\"0.01\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" source=\"bg2_jpg\"/>\n\t<e:Group width=\"640\" height=\"569\" x=\"0\" y=\"0\" anchorOffsetX=\"0\" anchorOffsetY=\"0\">\n\t\t<e:Button id=\"btnReturn\" label=\"返回主页\" x=\"12.21\" y=\"4.97\" anchorOffsetX=\"0\" width=\"142.42\" anchorOffsetY=\"0\" height=\"46.97\" enabled=\"true\"/>\n\t\t<e:Scroller width=\"640\" height=\"1012\" x=\"0\" y=\"54\" anchorOffsetY=\"0\" skinName=\"skins.VScrollBarSkin\">\n\t\t\t<e:Group x=\"-2\" y=\"-2\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" width=\"640\" height=\"424\">\n\t\t\t\t<e:Label text=\"比赛信息\" x=\"220.91\" y=\"10.94\" textColor=\"0xf41107\" size=\"45\" fontFamily=\"Arial\"/>\n\t\t\t\t<e:List id=\"listMatchs\" width=\"640\" height=\"1010.79\" x=\"2\" y=\"4\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" scaleX=\"1\" scaleY=\"1\" itemRendererSkinName=\"skins.VScrollBarSkin\" touchEnabled=\"true\">\n\t\t\t\t\t<e:layout>\n\t\t\t\t\t<e:VerticalLayout horizontalAlign=\"center\" verticalAlign=\"middle\"/>\n\t\t\t\t\t</e:layout>\n\t\t\t\t</e:List>\n\t\t\t\t<e:Button id=\"btnJoinMatch\" label=\"加入比赛\" x=\"206\" y=\"326\" anchorOffsetX=\"0\" width=\"174\" anchorOffsetY=\"0\" height=\"60\"/>\n\t\t\t\t<e:Button id=\"btnQueryMatchRes\" label=\"查询比赛\" x=\"210\" y=\"224\" anchorOffsetX=\"0\" width=\"174\" anchorOffsetY=\"0\" height=\"60\"/>\n\t\t\t\t<e:Button id=\"btnQueryBonus\" label=\"名次查询\" x=\"202\" y=\"440\" anchorOffsetX=\"0\" width=\"174\" anchorOffsetY=\"0\" height=\"60\"/>\n\t\t\t</e:Group>\n\t\t</e:Scroller>\n\t</e:Group>\n</e:Skin>"
+    },
+    {
+      "path": "resource/components/register.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin width=\"640\" height=\"1138\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<e:Image width=\"640\" height=\"1138\" x=\"0\" y=\"0\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" source=\"bg_jpg\"/>\n\t<e:Label text=\"手机号📱：\" x=\"10\" y=\"499\" italic=\"true\" textColor=\"0x090a0a\" anchorOffsetX=\"0\" width=\"292\" anchorOffsetY=\"0\" height=\"72\" size=\"60\"/>\n\t<e:Label text=\"用户名\" x=\"29\" y=\"385\" italic=\"true\" textColor=\"0x000000\" anchorOffsetX=\"0\" width=\"206\" anchorOffsetY=\"0\" height=\"72\" size=\"60\"/>\n\t<e:TextInput id=\"txtUserName\" width=\"354.55\" height=\"75\" x=\"240\" y=\"378\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" enabled=\"true\"/>\n\t<e:TextInput id=\"txtPhone\" width=\"354.55\" height=\"75\" x=\"257\" y=\"485\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" enabled=\"true\"/>\n\t<e:Button id=\"btnLogin\" label=\"登陆\" x=\"107\" y=\"637\" anchorOffsetX=\"0\" width=\"407\" anchorOffsetY=\"0\" height=\"76\"/>\n\t<e:Button id=\"btnReg\" label=\"注册\" x=\"113\" y=\"735\" anchorOffsetX=\"0\" width=\"395\" anchorOffsetY=\"0\" height=\"90\"/>\n\t<e:Label id=\"textMsg\" text=\"\" x=\"46\" y=\"876\" anchorOffsetX=\"0\" width=\"526\" anchorOffsetY=\"0\" height=\"174\" textColor=\"0xf90707\" size=\"45\"/>\n</e:Skin>"
+    },
+    {
+      "path": "resource/components/showValue.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin width=\"640\" height=\"480\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<w:Config id=\"15b9b5e8cc2\"/>\n\t<e:Image width=\"621.33\" height=\"472\" x=\"3.01\" y=\"7\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" source=\"showBox_png\" rotation=\"359.88\"/>\n\t<e:Button id=\"btnHomeBack\" label=\"返回主页\" x=\"405.68\" y=\"356.33\"/>\n\t<e:Button id=\"btnRetry\" label=\"再来一次\" y=\"356.34\" left=\"132\"/>\n\t<e:Label id=\"txtValue\" text=\"0\" x=\"237.33\" y=\"157.01\" anchorOffsetX=\"0\" width=\"195.33\" anchorOffsetY=\"0\" height=\"78\" textColor=\"0xfc0000\" size=\"80\"/>\n</e:Skin>"
+    },
+    {
+      "path": "resource/components/showValueTop.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin width=\"640\" height=\"480\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<w:Config id=\"15b9b5e8cc2\"/>\n\t<e:Image width=\"621.33\" height=\"472\" x=\"3.01\" y=\"7\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" source=\"showBox_png\" rotation=\"359.88\"/>\n\t<e:Button id=\"btnReturn\" label=\"返回主页\" x=\"121.68\" y=\"357.33\" anchorOffsetX=\"0\" width=\"380\"/>\n\t<e:Label id=\"txtValue\" text=\"0\" x=\"237.33\" y=\"157.01\" anchorOffsetX=\"0\" width=\"195.33\" anchorOffsetY=\"0\" height=\"78\" textColor=\"0xfc0000\" size=\"80\"/>\n\t<e:Label id=\"txtNameList\" text=\"\" x=\"75.33\" y=\"254.01\" anchorOffsetX=\"0\" width=\"423.33\" anchorOffsetY=\"0\" height=\"78\" textColor=\"0xFC0000\" size=\"30\"/>\n</e:Skin>"
+    },
+    {
+      "path": "resource/eui_skins/ButtonSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<e:Skin class=\"skins.ButtonSkin\" states=\"up,down,disabled\" minHeight=\"50\" minWidth=\"100\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:Image width=\"100%\" height=\"100%\" scale9Grid=\"1,3,8,8\" alpha.disabled=\"0.5\"\n             source=\"button_up_png\"\n             source.down=\"button_down_png\"/>\n    <e:Label id=\"labelDisplay\" top=\"8\" bottom=\"8\" left=\"8\" right=\"8\"\n             size=\"20\"\n             textColor=\"0xFFFFFF\" verticalAlign=\"middle\" textAlign=\"center\"/>\n    <e:Image id=\"iconDisplay\" horizontalCenter=\"0\" verticalCenter=\"0\"/>\n</e:Skin>\n"
+    },
+    {
+      "path": "resource/eui_skins/CheckBoxSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"skins.CheckBoxSkin\" states=\"up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:Group width=\"100%\" height=\"100%\">\n        <e:layout>\n            <e:HorizontalLayout verticalAlign=\"middle\"/>\n        </e:layout>\n        <e:Image fillMode=\"scale\" alpha=\"1\" alpha.disabled=\"0.5\" alpha.down=\"0.7\"\n                 source=\"checkbox_unselect_png\"\n                 source.upAndSelected=\"checkbox_select_up_png\"\n                 source.downAndSelected=\"checkbox_select_down_png\"\n                 source.disabledAndSelected=\"checkbox_select_disabled_png\"/>\n        <e:Label id=\"labelDisplay\" size=\"20\" textColor=\"0x707070\"\n                 textAlign=\"center\" verticalAlign=\"middle\"\n                 fontFamily=\"Tahoma\"/>\n    </e:Group>\n</e:Skin>\n"
+    },
+    {
+      "path": "resource/eui_skins/HScrollBarSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"skins.HScrollBarSkin\" minWidth=\"20\" minHeight=\"8\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:Image id=\"thumb\" source=\"roundthumb_png\" scale9Grid=\"3,3,2,2\" height=\"8\" width=\"30\" verticalCenter=\"0\"/>\n</e:Skin>\n"
+    },
+    {
+      "path": "resource/eui_skins/HSliderSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"skins.HSliderSkin\" minWidth=\"20\" minHeight=\"8\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:Image id=\"track\" source=\"track_sb_png\" scale9Grid=\"1,1,4,4\" width=\"100%\"\n             height=\"6\" verticalCenter=\"0\"/>\n    <e:Image id=\"thumb\" source=\"thumb_png\" verticalCenter=\"0\"/>\n</e:Skin>\n"
+    },
+    {
+      "path": "resource/eui_skins/ItemRendererSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<e:Skin class=\"skins.ItemRendererSkin\" states=\"up,down,disabled\" minHeight=\"50\" minWidth=\"100\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:Image width=\"100%\" height=\"100%\" scale9Grid=\"1,3,8,8\" alpha.disabled=\"0.5\"\n             source=\"button_up_png\"\n             source.down=\"button_down_png\"/>\n    <e:Label id=\"labelDisplay\" top=\"8\" bottom=\"8\" left=\"8\" right=\"8\"\n             size=\"20\" fontFamily=\"Tahoma\"\n             textColor=\"0xFFFFFF\" text=\"{data}\" verticalAlign=\"middle\" textAlign=\"center\"/>\n</e:Skin>\n"
+    },
+    {
+      "path": "resource/eui_skins/PanelSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"skins.PanelSkin\" minHeight=\"230\" minWidth=\"450\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:Image left=\"0\" right=\"0\" bottom=\"0\"  top=\"0\" source=\"border_png\" scale9Grid=\"2,2,12,12\" />\n    <e:Group id=\"moveArea\" left=\"0\" right=\"0\" top=\"0\" height=\"45\">\n        <e:Image left=\"0\" right=\"0\" bottom=\"0\"  top=\"0\" source=\"header_png\"/>\n        <e:Label id=\"titleDisplay\" size=\"20\" fontFamily=\"Tahoma\" textColor=\"0xFFFFFF\"\n                 wordWrap=\"false\" left=\"15\" right=\"5\" verticalCenter=\"0\"/>\n    </e:Group>\n    <e:Button id=\"closeButton\" label=\"close\" bottom=\"5\" horizontalCenter=\"0\"/>\n</e:Skin>\n"
+    },
+    {
+      "path": "resource/eui_skins/ProgressBarSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"skins.ProgressBarSkin\" minWidth=\"30\" minHeight=\"18\" xmlns:e=\"http://ns.egret.com/eui\">\n\t<e:Image source=\"track_pb_png\" scale9Grid=\"1,1,4,4\" width=\"100%\"\n\t\t\t height=\"100%\" verticalCenter=\"0\"/>\n\t<e:Image id=\"thumb\" height=\"100%\" width=\"100%\" source=\"thumb_pb_png\"/>\n\t<e:Label id=\"labelDisplay\" textAlign=\"center\" verticalAlign=\"middle\"\n\t\t\t size=\"15\" fontFamily=\"Tahoma\" textColor=\"0x707070\"\n\t\t\t horizontalCenter=\"0\" verticalCenter=\"0\"/>\n</e:Skin>\n"
+    },
+    {
+      "path": "resource/eui_skins/RadioButtonSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"skins.RadioButtonSkin\" states=\"up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:Group width=\"100%\" height=\"100%\">\n        <e:layout>\n            <e:HorizontalLayout verticalAlign=\"middle\"/>\n        </e:layout>\n        <e:Image fillMode=\"scale\" alpha=\"1\" alpha.disabled=\"0.5\" alpha.down=\"0.7\"\n                 source=\"radiobutton_unselect_png\"\n                 source.upAndSelected=\"radiobutton_select_up_png\"\n                 source.downAndSelected=\"radiobutton_select_down_png\"\n                 source.disabledAndSelected=\"radiobutton_select_disabled_png\"/>\n        <e:Label id=\"labelDisplay\" size=\"20\" textColor=\"0x707070\"\n                 textAlign=\"center\" verticalAlign=\"middle\"\n                 fontFamily=\"Tahoma\"/>\n    </e:Group>\n</e:Skin>\n"
+    },
+    {
+      "path": "resource/eui_skins/ScrollerSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"skins.ScrollerSkin\" minWidth=\"20\" minHeight=\"20\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:HScrollBar id=\"horizontalScrollBar\" width=\"100%\" bottom=\"0\"/>\n    <e:VScrollBar id=\"verticalScrollBar\" height=\"100%\" right=\"0\"/>\n</e:Skin>"
+    },
+    {
+      "path": "resource/eui_skins/TextInputSkin.exml",
+      "content": "<?xml version='1.0' encoding='utf-8'?>\n<e:Skin class=\"skins.TextInputSkin\" minHeight=\"40\" minWidth=\"300\" states=\"normal,disabled,normalWithPrompt,disabledWithPrompt\" xmlns:e=\"http://ns.egret.com/eui\">\n\t<e:Image width=\"100%\" height=\"100%\" scale9Grid=\"1,3,8,8\" source=\"button_up_png\"/>\n\t<e:Rect height=\"100%\" width=\"100%\" fillColor=\"0xffffff\"/>\n \t<e:EditableText id=\"textDisplay\" verticalCenter=\"0\" left=\"10\" right=\"10\"\n\t                textColor=\"0x000000\" textColor.disabled=\"0xff0000\" width=\"100%\" height=\"24\" size=\"20\" />\n\t<e:Label id=\"promptDisplay\" verticalCenter=\"0\" left=\"10\" right=\"10\"\n\t                textColor=\"0xa9a9a9\" width=\"100%\" height=\"24\" size=\"20\" touchEnabled=\"false\" includeIn=\"normalWithPrompt,disabledWithPrompt\"/>\n</e:Skin>"
+    },
+    {
+      "path": "resource/eui_skins/ToggleSwitchSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"skins.ToggleSwitchSkin\" states=\"up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:Image source=\"on_png\"\n             source.up=\"off_png\"\n             source.down=\"off_png\"\n             source.disabled=\"off_png\"/>\n    <e:Image source=\"handle_png\"\n             horizontalCenter=\"-18\"\n             horizontalCenter.upAndSelected=\"18\"\n             horizontalCenter.downAndSelected=\"18\"\n             horizontalCenter.disabledAndSelected=\"18\"\n             verticalCenter=\"0\"/>\n</e:Skin>\n"
+    },
+    {
+      "path": "resource/eui_skins/VSliderSkin.exml",
+      "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"skins.VSliderSkin\" minWidth=\"25\" minHeight=\"30\" xmlns:e=\"http://ns.egret.com/eui\">\n    <e:Image id=\"track\" source=\"track_png\" scale9Grid=\"1,1,4,4\" width=\"7\" height=\"100%\" horizontalCenter=\"0\"/>\n    <e:Image id=\"thumb\" source=\"thumb_png\" horizontalCenter=\"0\" />\n</e:Skin>\n"
+    }
+  ]
+}

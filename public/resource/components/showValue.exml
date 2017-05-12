@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="640" height="480" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15b9b5e8cc2"/>
+	<e:Image width="621.33" height="472" x="3.01" y="7" anchorOffsetX="0" anchorOffsetY="0" source="showBox_png" rotation="359.88"/>
+	<e:Button id="btnHomeBack" label="返回主页" x="405.68" y="356.33"/>
+	<e:Button id="btnRetry" label="再来一次" y="356.34" left="132"/>
+	<e:Label id="txtValue" text="0" x="237.33" y="157.01" anchorOffsetX="0" width="195.33" anchorOffsetY="0" height="78" textColor="0xfc0000" size="80"/>
+</e:Skin>

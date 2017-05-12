@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="640" height="1138" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15bbec0a4de"/>
+	<e:Image width="640" height="1138" x="0" y="0.01" anchorOffsetX="0" anchorOffsetY="0" source="bg2_jpg"/>
+	<e:Group width="640" height="569" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Button id="btnReturn" label="返回主页" x="12.21" y="4.97" anchorOffsetX="0" width="142.42" anchorOffsetY="0" height="46.97" enabled="true"/>
+		<e:Scroller width="640" height="1012" x="0" y="54" anchorOffsetY="0" skinName="skins.VScrollBarSkin">
+			<e:Group x="-2" y="-2" anchorOffsetX="0" anchorOffsetY="0" width="640" height="424">
+				<e:Label text="比赛信息" x="220.91" y="10.94" textColor="0xf41107" size="45" fontFamily="Arial"/>
+				<e:List id="listMatchs" width="640" height="1010.79" x="2" y="4" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" itemRendererSkinName="skins.VScrollBarSkin" touchEnabled="true">
+					<e:layout>
+					<e:VerticalLayout horizontalAlign="center" verticalAlign="middle"/>
+					</e:layout>
+				</e:List>
+				<e:Button id="btnJoinMatch" label="加入比赛" x="206" y="326" anchorOffsetX="0" width="174" anchorOffsetY="0" height="60"/>
+				<e:Button id="btnQueryMatchRes" label="查询比赛" x="210" y="224" anchorOffsetX="0" width="174" anchorOffsetY="0" height="60"/>
+				<e:Button id="btnQueryBonus" label="名次查询" x="202" y="440" anchorOffsetX="0" width="174" anchorOffsetY="0" height="60"/>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

@@ -1,20 +1,28 @@
-var sleep = require('sleep');
-var nowTime = Date.now();
+var _ = require("lodash");
 
-console.log('now Time:' + nowTime);
+var arr = ["123123123"];
 
-sleep.sleep(1);
+console.log(_.indexOf(arr, "123123123"));
 
-var afterTime = Date.now();
-console.log('now Time:' + afterTime);
 
-var cnt = 3;
+// var sleep = require('sleep');
+// var nowTime = Date.now();
 
-var intervalObj = setInterval(function () {
-        if ( cnt --) {
-            console.log('interviewing the interval');
-        } else {
-            console.log('Stop!');
-            clearInterval(intervalObj);
-        }
-}, 500);
+
+// console.log('now Time:' + nowTime);
+//
+// sleep.sleep(1);
+//
+// var afterTime = Date.now();
+// console.log('now Time:' + afterTime);
+//
+// var cnt = 3;
+//
+// var intervalObj = setInterval(function () {
+//         if ( cnt --) {
+//             console.log('interviewing the interval');
+//         } else {
+//             console.log('Stop!');
+//             clearInterval(intervalObj);
+//         }
+// }, 500);

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="640" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="100%" height="100%" x="0" y="0" source="matchInfo2_png"/>
+	<e:Label id="txtMatchName" text="{data.matchName}" x="5.33" y="20.67" anchorOffsetX="0" width="211.33" anchorOffsetY="0" height="40.67" textColor="0x0432f9" size="25"/>
+	<e:Label id="txtStartTime" text="{data.startTime}" x="221.66" y="19.34" anchorOffsetX="0" width="181.33" anchorOffsetY="0" height="52.67" textColor="0x0432F9" size="25"/>
+	<e:Button id="btnJoinGame" label="加入游戏" x="421" y="20" anchorOffsetX="0" width="110" anchorOffsetY="0" height="35"/>
+	<e:Button id="btnQueryResult" label="查看成绩" x="537.96" y="19.26" anchorOffsetX="0.96" anchorOffsetY="-0.74" width="96" height="37"/>
+</e:Skin>
